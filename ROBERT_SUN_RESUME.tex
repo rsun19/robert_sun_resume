@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Robert Sun} \\ \vspace{1pt}
+    \small 718-730-2016 $|$
+    \href{mailto:robertssun1234@gmail.com}{\underline{robertssun1234@gmail.com}} $|$
+    \href{https://robertssun.me/portfoliodev/}{\underline{robertssun.me/portfoliodev}} $|$  
+    \href{https://linkedin.com/in/rob-sun}{\underline{linkedin.com/in/rob-sun}} $|$
+    \href{https://github.com/rsun19}{\underline{github.com/rsun19}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Virginia}{Charlottesville, VA}
+      {Bachelor of Arts in Computer Science}{Aug. 2021 - Expected Dec. 2024}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern - OpenShift AI Dashboard Team }{May 2024 - August 2024}
+      {Red Hat}{New York, NY}
+      \resumeItemListStart
+        \resumeItem{Engineered bug fixes for multiple parts of the dashboard, including pipeline and workbench errors, authorization vulnerabilities (based on Kubernetes RBAC), CI test failures, and general UI bugs}
+        \resumeItem{Added Cypress end-to-end tests, created test functionality for intercepting MLMD requests, designed unit tests, improved repository-wide type definitions and narrowing, and configured ESLint rules which improved overall code quality and test coverage}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Engineer Intern - ConsoleDot Team}{May 2023 – July 2023}
+      {Red Hat}{Remote}
+      \resumeItemListStart
+        \resumeItem{Constructed webpages, generated search indices, improved form rendering, increased viewport reliability, and made cleaner UIs in the Red Hat Hybrid Cloud Console website}
+        \resumeItem{Developed validation scripts for Kafka requests and JSON files and crafted Cypress end-to-end unit tests for web pages. These efforts successfully identified bugs and bolstered backend and frontend reliability}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Teaching Assistant}{Aug. 2023 – Dec. 2023}
+      {University of Virginia School of Engineering}{Charlottesville, VA}
+      \resumeItemListStart
+        \resumeItem{Held office hours and graded various assignments for a software development class containing 481 students}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Flashcards Website} $|$ \href{https://easyflashcards.org/}{\underline{easyflashcards.org}}}{April 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Creating a flashcards website where users can collaborate and develop flashcards using rich-text editors}
+            \resumeItem{Using React, TypeScript, Next.js, Prisma, Express.js, Docker, and JavaScript}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Book Blog Website} $|$ \href{https://robertsrandomreviews.com/}{\underline{robertsrandomreviews.com}}}{April 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Created a personal book review blog using HTML/CSS, JavaScript, Tailwind, and Flask}
+            \resumeItem{Devised API endpoints for overseeing posts and comment sections, and merged the New York Times API}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Mobile App Development} $|$ \emph{Dart, Flutter, PostgreSQL, Firebase}}{Dec. 2022 -- Aug. 2023}
+          \resumeItemListStart
+            \resumeItem{Built a trip planner mobile app where Users are able to log in using Google Sign-In services and share trip itineraries}
+            \resumeItem{Integrated APIs to provide direction-by-direction navigation services. Built a ChatGPT API-powered trip planner}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{ML/AI} $|$ \emph{Flask, Python, PyTorch}}{March 2023 -- April 2023}
+          \resumeItemListStart
+            \resumeItem{Trained ResNet18 on the Garbage Classification and Drinking Water Classification dataset using PyTorch, achieving 84 percent accuracy based on testing images}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Free Food Website} $|$ \emph{Django, Python, HTML/CSS, JavaScript, Heroku}}{Aug. 2023 -- Dec. 2023}
+          \resumeItemListStart
+            \resumeItem{Working in a team of 3 to create a Django application centered around helping students locate free food}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, TypeScript, JavaScript, Java, Dart, C, SQL (Postgres), HTML/CSS, R, Swift} \\
+     \textbf{Frameworks}{: React, Next.js, Express.js, Flask, Flutter, Django, PyTorch, JavaFX} \\
+     \textbf{Developer Tools}{: Git, Docker, Kubernetes, Hetzner Cloud, Linode, OpenShift, Firebase, VS Code} \\
+     \textbf{Relevent coursework}{: Advanced Software Development, Artificial Intelligence, Algorithms, Computer Systems and Organization, Internet Scale Applications, Mathematical Statistics, Intro. to Cybersecurity, Statistical Machine Learning}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
